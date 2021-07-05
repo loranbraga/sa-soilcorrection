@@ -25,4 +25,8 @@ public class CorrecaoCalcioMagnesio {
     return caOAdicionar/caOAdicionado;
   }
 
+  public static double getValorPorHectare(double qtdAplicar, double valor){
+    return qtdAplicar*valor;
+  }
+
 }

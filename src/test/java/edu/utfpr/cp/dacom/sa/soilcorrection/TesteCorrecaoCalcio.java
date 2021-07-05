@@ -34,4 +34,9 @@ public class TesteCorrecaoCalcio {
     assertEquals(8.827818283791364,CorrecaoCalcioMagnesio.getQtdCorretivo(0.1783, 1.574));
   }
 
+
+  @Test
+  public void testValorPorHectare(){
+    assertEquals(36750.0,CorrecaoCalcioMagnesio.getValorPorHectare(73.5, 500));
+  }
 }

@@ -14,5 +14,24 @@ public class TesteCorrecaoCalcio {
     assertEquals(12.645461598138091, CorrecaoCalcioMagnesio.getParticipacaoAtualCtcCalcio(12.89, 1.63));
   }
 
+  @Test
+  public void testaQuantidadeAplicar(){
+    System.out.println(CorrecaoCalcioMagnesio.getQtdAplicar(12, 8.82));
+  }
+
+  @Test
+  public void testaTeorCaOAdicionar(){
+    assertEquals(1.5720805369127504,CorrecaoCalcioMagnesio.getTeorCaOAdicionar(5.76, 56.9, 44.7));
+  }
+
+  @Test
+  public void testaQtdTotalCalcioAplicada(){
+    assertEquals(0.1783,CorrecaoCalcioMagnesio.getQtdTotalCalcioAplicada(10));
+  }
+
+  @Test
+  public void testaQtdCorretivo(){
+    assertEquals(8.827818283791364,CorrecaoCalcioMagnesio.getQtdCorretivo(0.1783, 1.574));
+  }
 
 }

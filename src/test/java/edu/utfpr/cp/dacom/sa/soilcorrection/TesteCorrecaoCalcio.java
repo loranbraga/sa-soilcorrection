@@ -16,7 +16,7 @@ public class TesteCorrecaoCalcio {
 
   @Test
   public void testaQuantidadeAplicar(){
-    System.out.println(CorrecaoCalcioMagnesio.getQtdAplicar(12, 8.82));
+    assertEquals(73.5,CorrecaoCalcioMagnesio.getQtdAplicar(12, 8.82));
   }
 
   @Test

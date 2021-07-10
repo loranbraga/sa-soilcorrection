@@ -37,6 +37,8 @@ public class TesteCorrecaoCalcio {
 
   @Test
   public void testValorPorHectare(){
-    assertEquals(36750.0,CorrecaoCalcioMagnesio.getValorPorHectare(73.5, 500));
+    assertEquals(36750,CorrecaoCalcioMagnesio.getValorPorHectare(73.5, 500));
   }
+
+
 }

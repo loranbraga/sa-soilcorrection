@@ -1,32 +1,46 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
-public class CorrecaoCalcioMagnesio {
-  public static double getParticipacaoAtualCtcCalcio(double ctcCmol, double calcio){
-    return calcio/ctcCmol * 100;
-  } 
+public class CorrecaoCalcioMagnesio implements ICorrecaoNutriente<FonteCalcioMagnesio> {
+  public double calculaNecessidadeAplicar(
+    double calcio,
+    double participacaoCTCExistente,
+    double participacaoCTCDesejada,
+    double teor,
+    double prnt ){
+        if (teor <= 0) {
+            throw new IllegalArgumentException();
+        }
+        if (prnt <= 0) {
+            throw new IllegalArgumentException();
+        }
+        if (calcio <= 0) {
+            throw new IllegalArgumentException();
+        }
 
-  public static double getParticipacaoAtualCtcMagnesio(double ctcCmol, double magnesio){
-    return magnesio/ctcCmol * 100;
+        if (participacaoCTCExistente <= 0) {
+            throw new IllegalArgumentException();
+        }
+
+        if (participacaoCTCDesejada <= 0) {
+            throw new IllegalArgumentException();
+        }
+        double caOAdicionar = (calcio*participacaoCTCDesejada/participacaoCTCExistente)-calcio;
+        double caOAdicionado = teor*0.01783;
+        double qtdCorretivo = caOAdicionar/caOAdicionado;
+        return qtdCorretivo*100/prnt;
+
   }
 
-  public static double getQtdAplicar(double prnt, double qtdCorretivo){
-    return qtdCorretivo*100/prnt;
-  }
+  public double calculaCusto(double custoFonte, double qtdeAplicar) {
 
-  public static double getTeorCaOAdicionar(double calcio, double participacaoCTCDesejada, double participacaoCTCAtual){
-    return (calcio*participacaoCTCDesejada/participacaoCTCAtual)-calcio;
-  }
+    if (custoFonte <= 0) {
+        throw new IllegalArgumentException();
+    }
 
-  public static double getQtdTotalCalcioAplicada(double teor){
-    return teor*0.01783;
-  }
+    if (qtdeAplicar <= 0) {
+        throw new IllegalArgumentException();
+    }
 
-  public static double getQtdCorretivo(double caOAdicionado, double caOAdicionar){
-    return caOAdicionar/caOAdicionado;
-  }
-
-  public static double getValorPorHectare(double qtdAplicar, double valor){
-    return qtdAplicar*valor;
-  }
-
+    return custoFonte * qtdeAplicar ;
+}
 }

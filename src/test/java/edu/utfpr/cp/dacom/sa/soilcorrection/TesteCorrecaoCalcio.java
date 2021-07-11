@@ -17,9 +17,15 @@ public class TesteCorrecaoCalcio {
   }
 
   @Test
-  public void testaV() {
+  public void testaVAtual() {
     CorrecaoCalcioMagnesio correcao = new CorrecaoCalcioMagnesio();
     assertEquals(58.494957331264544, correcao.calculaPercentualV(0.15,5.76,1.63, 5.35));
+  }
+
+  @Test
+  public void testaVApos() {
+    CorrecaoCalcioMagnesio correcao = new CorrecaoCalcioMagnesio();
+    assertEquals(70.92391304347827, correcao.calculaPercentualV(0.15,7.33,5.57, 5.35));
   }
 
 }

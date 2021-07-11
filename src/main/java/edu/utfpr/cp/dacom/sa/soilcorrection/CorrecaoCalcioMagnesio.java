@@ -42,5 +42,15 @@ public class CorrecaoCalcioMagnesio implements ICorrecaoNutriente<FonteCalcioMag
     }
 
     return custoFonte * qtdeAplicar ;
-}
+  }
+
+  public double calculaPercentualV(
+		double potassio,
+		double calcio,
+		double magnesio,
+		double hAL
+	) {
+
+		return 100 * (potassio + calcio + magnesio)  / (potassio + calcio + magnesio + hAL);
+	}
 }

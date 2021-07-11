@@ -16,4 +16,10 @@ public class TesteCorrecaoCalcio {
     assertEquals(36737.5,correcao.calculaCusto(500, 73.475));
   }
 
+  @Test
+  public void testaV() {
+    CorrecaoCalcioMagnesio correcao = new CorrecaoCalcioMagnesio();
+    assertEquals(58.494957331264544, correcao.calculaPercentualV(0.15,5.76,1.63, 5.35));
+  }
+
 }

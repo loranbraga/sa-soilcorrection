@@ -45,6 +45,15 @@ public class TestaValoresIdeais {
         }
 
         @Test
+        public void testaParticipacaoIdeal() {
+                assertEquals(true,TexturaSolo.TEXTURA_MEDIA.ehParticipacaoIdealCalcio(40));
+                assertEquals(true,TexturaSolo.ARGILOSO.ehParticipacaoIdealCalcio(45));
+                assertEquals(true,TexturaSolo.TEXTURA_MEDIA.ehParticipacaoIdealMagnesio(11));
+                assertEquals(true,TexturaSolo.ARGILOSO.ehParticipacaoIdealMagnesio(11));
+
+        }
+
+        @Test
         public void testaCalculaSCmol() {
                 assertEquals(7.54, new EquilibrioCorrecaoCTC().calculaSCmol(0.15, 5.76, 1.63));
 

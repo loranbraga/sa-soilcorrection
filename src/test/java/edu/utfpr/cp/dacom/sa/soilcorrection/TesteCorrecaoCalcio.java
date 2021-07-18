@@ -28,4 +28,9 @@ public class TesteCorrecaoCalcio {
     assertEquals(70.92391304347827, correcao.calculaPercentualV(0.15,7.33,5.57, 5.35));
   }
 
+  @Test
+  public void testaParticipacaoMagnesioAposCorrecao() {
+    CorrecaoCalcioMagnesio correcao = new CorrecaoCalcioMagnesio();
+    assertEquals(21.127343389976147,correcao.calculaMagnesioAposCorrecao(5.76,1.63,44.7,56.9,10.0, FonteCalcioMagnesio.CALCARIO_CALCITICO, 0.15,5.35));
+  }
 }

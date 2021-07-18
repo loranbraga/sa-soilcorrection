@@ -3,12 +3,12 @@ package edu.utfpr.cp.dacom.sa.soilcorrection;
 import java.util.Set;
 
 public enum FonteCalcioMagnesio implements IFonteNutriente {
-    CALCARIO_DOLOMITICO( 1.0),
-    CALCARIO_CALCITICO( 1),
-    CALCARIO_CONCHA(1),
-    GESSO_AGRICOLA(1),
-    HIDROXIDO_CÁLCIO( 1),
-    CALCARIO_MAGNESIANO(1);
+    CALCARIO_DOLOMITICO(18),
+    CALCARIO_CALCITICO(5),
+    CALCARIO_CONCHA(0),
+    GESSO_AGRICOLA(0),
+    HIDROXIDO_CÁLCIO(0),
+    CALCARIO_MAGNESIANO(10);
 
 
     private final double teorFonteMagnesio;

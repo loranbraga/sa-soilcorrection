@@ -2,6 +2,7 @@ package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 import java.util.Set;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.interfaces.IFonteNutriente;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

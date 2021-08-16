@@ -3,6 +3,7 @@ package edu.utfpr.cp.dacom.sa.soilcorrection;
 import org.junit.jupiter.api.Test;
 
 import edu.utfpr.cp.dacom.sa.soilcorrection.enums.TexturaSolo;
+import edu.utfpr.cp.dacom.sa.soilcorrection.uteis.correcoes.EquilibrioCorrecaoCTC;
 
 import static org.junit.jupiter.api.Assertions.*;
 

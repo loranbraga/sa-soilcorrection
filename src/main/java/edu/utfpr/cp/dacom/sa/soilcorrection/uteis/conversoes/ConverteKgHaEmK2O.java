@@ -1,16 +1,16 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection.uteis;
+package edu.utfpr.cp.dacom.sa.soilcorrection.uteis.conversoes;
 
-public class ConverteCMolcDm3EmMgDm3 
+public class ConverteKgHaEmK2O 
         implements Conversao<Double, Double> {
 
     @Override
     public Double converte(Double valor) {
-        
+
         if (valor <= 0) {
             throw new IllegalArgumentException();
         }
 
-        return valor * 391;
+        return valor * 1.2;
     }
-
+    
 }

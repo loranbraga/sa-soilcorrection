@@ -1,4 +1,4 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection.uteis;
+package edu.utfpr.cp.dacom.sa.soilcorrection.uteis.conversoes;
 
 public class ConverteMgDm3EmKgHa implements Conversao<Double, Double> {
 

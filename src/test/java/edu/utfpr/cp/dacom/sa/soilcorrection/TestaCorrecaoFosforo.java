@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import edu.utfpr.cp.dacom.sa.soilcorrection.uteis.conversoes.ConverteKgHaEmP2O5;
 import edu.utfpr.cp.dacom.sa.soilcorrection.uteis.conversoes.ConverteMgDm3EmKgHa;
+import edu.utfpr.cp.dacom.sa.soilcorrection.uteis.correcoes.CorrecaoFosforo;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.enums.FontePotassio;
 import edu.utfpr.cp.dacom.sa.soilcorrection.uteis.conversoes.ConverteCMolcDm3EmMgDm3;
 import edu.utfpr.cp.dacom.sa.soilcorrection.uteis.conversoes.ConverteKgHaEmK2O;
 import edu.utfpr.cp.dacom.sa.soilcorrection.uteis.correcoes.CorrecaoPotassio;

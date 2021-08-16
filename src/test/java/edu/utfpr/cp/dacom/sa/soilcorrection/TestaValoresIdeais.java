@@ -1,6 +1,9 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 import org.junit.jupiter.api.Test;
+
+import edu.utfpr.cp.dacom.sa.soilcorrection.enums.TexturaSolo;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TestaValoresIdeais {

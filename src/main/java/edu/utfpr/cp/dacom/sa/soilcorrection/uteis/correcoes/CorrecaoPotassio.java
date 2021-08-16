@@ -1,6 +1,6 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection.uteis.correcoes;
 
-import edu.utfpr.cp.dacom.sa.soilcorrection.FontePotassio;
+import edu.utfpr.cp.dacom.sa.soilcorrection.enums.FontePotassio;
 import edu.utfpr.cp.dacom.sa.soilcorrection.interfaces.ICorrecaoNutriente;
 import edu.utfpr.cp.dacom.sa.soilcorrection.interfaces.ICorrecaoNutrienteQuantidadeAplicar;
 
